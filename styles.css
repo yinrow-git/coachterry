@@ -1381,7 +1381,15 @@ img { display: block; max-width: 100%; }
   .hero-content { text-align: center; }
   .hero-sub { margin: 0 auto 40px; }
   .hero-actions { justify-content: center; }
-  .slideshow-frame { max-width: 240px; }
+  .hero-frame-col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .slideshow-frame {
+    width: min(260px, 60vw);
+    max-width: none;
+  }
 }
 
 @media (max-width: 768px) {
